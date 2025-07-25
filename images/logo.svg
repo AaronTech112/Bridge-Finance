@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <!-- Bridge Finance Logo -->
+  <!-- Main Bridge Structure -->
+  <path d="M150 120 L150 220 L200 220 L200 180 L300 180 L300 220 L350 220 L350 120 L300 120 L300 160 L200 160 L200 120 Z" fill="none" stroke="#0088ff" stroke-width="15" />
+  
+  <!-- Bridge Arc -->
+  <path d="M125 220 C200 150, 300 150, 375 220" fill="none" stroke="#0088ff" stroke-width="15" />
+  
+  <!-- Company Name -->
+  <text x="250" y="270" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff">BRIDGE FINANCE</text>
+  
+  <!-- Tagline -->
+  <text x="250" y="300" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">Pathway to financial inclusiveness</text>
+</svg>
