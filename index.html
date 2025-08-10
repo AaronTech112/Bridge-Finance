@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/jpg" href="images/logo.jpg">
+    <!-- TradingView Widget Script -->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async></script>
+    <!-- Inline CSS for Ticker -->
+
 </head>
 <body class="dark-theme">
     <!-- Navigation -->
@@ -28,9 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
@@ -40,12 +42,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#performance">Performance</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="https://t.me/BridgeFinanceOfficial">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary login-btn" href="https://t.me/BridgeFinance_Official" target="_blank"><i class="fab fa-telegram me-1"></i> Join Our Telegram</a>
+                        <a class="btn btn-primary login-btn" href="https://t.me/+0UyukDceXvI5YjM0" target="_blank"><i class="fab fa-telegram me-1"></i> Join Our Telegram</a>
                     </li>
                 </ul>
             </div>
@@ -54,19 +55,65 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
+
         <div class="container">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Ticker tape by TradingView</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+            {
+            "proName": "FOREXCOM:SPXUSD",
+            "title": "S&P 500 Index"
+            },
+            {
+            "proName": "FOREXCOM:NSXUSD",
+            "title": "US 100 Cash CFD"
+            },
+            {
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR to USD"
+            },
+            {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+            },
+            {
+            "proName": "NSENG:DANGCEM",
+            "title": "dgt"
+            },
+            {
+            "proName": "NSENG:UBA",
+            "title": "uba"
+            },
+            {
+            "proName": "NSENG:FIRSTHOLDCO",
+            "title": "ftb"
+            }
+        ],
+        "colorTheme": "dark",
+        "locale": "en",
+        "largeChartUrl": "",
+        "isTransparent": true,
+        "showSymbolLogo": true,
+        "displayMode": "adaptive"
+        }
+        </script>
+        </div>
+        <!-- TradingView Widget END -->
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <h1 class="display-3 fw-bold mb-4">Pathway to <span class="gradient-text">Financial Inclusiveness</span></h1>
                     <p class="lead mb-4">Bridge Finance is revolutionizing the financial landscape with cutting-edge trading solutions, expert mentorship, and innovative wealth growth strategies.</p>
                     <div class="hero-btns">
-                        <a href="https://t.me/BridgeFinance_Official" class="btn btn-primary btn-lg me-3" target="_blank"><i class="fab fa-telegram me-2"></i>Join Telegram</a>
+                        <a href="https://t.me/+0UyukDceXvI5YjM0" class="btn btn-primary btn-lg me-3" target="_blank"><i class="fab fa-telegram me-2"></i>Join Telegram</a>
                         <a href="#services" class="btn btn-outline-light btn-lg">Explore Services</a>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
                     <div class="hero-animation">
-                        <!-- 3D animated chart or financial visualization will go here -->
                         <div class="chart-container">
                             <div class="chart-placeholder">
                                 <div class="chart-line"></div>
@@ -80,6 +127,44 @@
         </div>
         <div class="hero-shape"></div>
     </section>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Ticker tape by TradingView</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+            {
+            "proName": "FOREXCOM:SPXUSD",
+            "title": "S&P 500 Index"
+            },
+            {
+            "proName": "FOREXCOM:NSXUSD",
+            "title": "US 100 Cash CFD"
+            },
+            {
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR to USD"
+            },
+            {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+            },
+            {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "Ethereum"
+            }
+        ],
+        "colorTheme": "dark",
+        "locale": "en",
+        "largeChartUrl": "",
+        "isTransparent": false,
+        "showSymbolLogo": true,
+        "displayMode": "adaptive"
+        }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
 
     <!-- Services Overview -->
     <section id="services" class="services-section">
@@ -163,7 +248,6 @@
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="performance-chart">
-                        <!-- Interactive chart will go here -->
                         <div class="chart-placeholder performance-placeholder">
                             <div class="chart-bar"></div>
                             <div class="chart-bar"></div>
@@ -176,7 +260,7 @@
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="performance-stats">
                         <div class="stat-item">
-                            <h3>98.7%</h3>
+                            <h3>80%</h3>
                             <p>Signal Accuracy</p>
                         </div>
                         <div class="stat-item">
@@ -198,7 +282,7 @@
         </div>
     </section>
 
-    <!-- Move Testimonials here -->
+    <!-- Testimonials -->
     <section class="testimonials-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
@@ -349,7 +433,7 @@
                         <div class="blog-content">
                             <h3>Crypto Market Analysis: Q3 2025 Outlook</h3>
                             <p>An in-depth look at cryptocurrency trends and investment opportunities for the coming quarter.</p>
-                            <a href="https://t.me/BridgeFinance_Official" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://t.me/+0UyukDceXvI5YjM0" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -361,7 +445,7 @@
                         <div class="blog-content">
                             <h3>5 Advanced Forex Trading Strategies for Volatile Markets</h3>
                             <p>Expert techniques to navigate and profit from high-volatility periods in currency markets.</p>
-                            <a href="https://t.me/BridgeFinance_Official" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://t.me/+0UyukDceXvI5YjM0" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -373,13 +457,13 @@
                         <div class="blog-content">
                             <h3>The Modern Approach to Portfolio Diversification</h3>
                             <p>How to build a resilient investment portfolio that balances traditional and alternative assets.</p>
-                            <a href="https://t.me/BridgeFinance_Official" class="btn-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://t.me/+0UyukDceXvI5YjM0" class="btn-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-5" data-aos="fade-up">
-                <a href="https://t.me/BridgeFinance_Official" class="btn btn-outline-light">View All Insights</a>
+                <a href="https://t.me/+0UyukDceXvI5YjM0" class="btn btn-outline-light">View All Insights</a>
             </div>
         </div>
     </section>
@@ -393,11 +477,9 @@
                         <img src="images/logo.jpg" alt="Bridge Finance Logo" class="footer-logo">
                         <p>Bridge Finance is a next-generation fintech and asset management company revolutionizing how people access financial markets and build wealth.</p>
                         <div class="social-links">
-                        
                             <a href="https://x.com/Bridge_finance_?t=UIclLc4bCqRDbXJ5IYMiqg&s=09"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.instagram.com/bridge_finance_?igsh=MTdrc3hxdXk3MW5teQ=="><i class="fab fa-instagram"></i></a>
-                         
-                            <a href="https://t.me/BridgeFinanceOfficial" target="_blank"><i class="fab fa-telegram me-1"></i> </a>
+                            <a href="https://t.me/BridgeFinanceOfficial" target="_blank"><i class="fab fa-telegram me-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -405,7 +487,6 @@
                     <div class="footer-links">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="#performance">Performance</a></li>
                             <li><a href="https://t.me/BridgeFinanceOfficial">Contact</a></li>
@@ -418,7 +499,7 @@
                         <ul>
                             <li><a href="#services">Trading</a></li>
                             <li><a href="education.html">Education</a></li>
-                            <li><a href="https://t.me/BridgeFinance_Official">Signals</a></li>
+                            <li><a href="https://t.me/+0UyukDceXvI5YjM0">Signals</a></li>
                             <li><a href="https://t.me/BridgeFinanceOfficial">Asset Management</a></li>
                         </ul>
                     </div>
