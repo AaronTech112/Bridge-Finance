@@ -188,8 +188,25 @@
                     <div class="platform-showcase">
                         <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Trading Platform" class="img-fluid rounded">
                         <div class="platform-overlay">
-                            <a href="#" class="play-btn"><i class="fas fa-play"></i></a>
+                            <a href="#" class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="fas fa-play"></i></a>
                             <span>Watch Platform Demo</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Modal -->
+                    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="videoModalLabel">Platform Demo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/5iEHsRja8u0" title="Platform Demo Video" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -218,16 +235,16 @@
                             <p>Designed for long-term capital appreciation with a higher risk tolerance.</p>
                             <div class="portfolio-stats">
                                 <div class="stat">
-                                    <span class="value">15-25%</span>
-                                    <span class="label">Target Annual Return</span>
+                                    <span class="value">5-25%</span>
+                                    <span class="label">Monthly Return</span>
                                 </div>
                                 <div class="stat">
-                                    <span class="value">5+ Years</span>
-                                    <span class="label">Investment Horizon</span>
+                                    <span class="value">6 Months</span>
+                                    <span class="label">Investment Duration</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-item">
+                        <!-- <div class="portfolio-item">
                             <h4>Balanced Portfolio</h4>
                             <p>Balanced approach combining growth and income with moderate risk.</p>
                             <div class="portfolio-stats">
@@ -254,7 +271,7 @@
                                     <span class="label">Investment Horizon</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <a href="https://t.me/BridgeFinanceOfficial" class="btn btn-primary mt-4">Schedule Consultation</a>
                 </div>
@@ -341,7 +358,7 @@
     </section>
 
     <!-- Wealth Growth Plans -->
-    <section class="wealth-growth-section">
+    <!-- <section class="wealth-growth-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
                 <h2>Long-term Wealth Growth Plans</h2>
@@ -438,7 +455,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Service Process -->
     <section class="process-section">

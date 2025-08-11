@@ -91,13 +91,39 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="education-video-preview">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Education Preview" class="img-fluid rounded">
-                        <div class="video-overlay">
-                            <a href="#" class="play-btn"><i class="fas fa-play"></i></a>
-                            <span>Watch Introduction</span>
+                        <div class="video-container">
+                            <iframe 
+                                id="video-frame"
+                                style="display: none"
+                                width="100%" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/5iEHsRja8u0?si=0tQ7J9UX3OKPwUR2"
+                                title="Education Preview"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <div class="preview-overlay" id="video-preview">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                    alt="Education Preview" 
+                                    class="img-fluid rounded">
+                                <div class="video-overlay">
+                                    <button class="play-btn" onclick="playVideo()">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <span>Watch Introduction</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    function playVideo() {
+                        document.getElementById('video-preview').style.display = 'none';
+                        document.getElementById('video-frame').style.display = 'block';
+                    }
+                </script>
             </div>
         </div>
     </section>
@@ -123,7 +149,7 @@
                             <li><i class="fas fa-check"></i> Risk management fundamentals</li>
                             <li><i class="fas fa-check"></i> Building your first portfolio</li>
                         </ul>
-                        <a href="#courses" class="btn-link">View Courses <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/BridgeFinanceOfficial" class="btn-link">View Courses <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
@@ -135,12 +161,12 @@
                         <h3>Intermediate Strategies</h3>
                         <p>Develop advanced trading techniques and analytical skills for consistent results.</p>
                         <ul class="category-features">
-                            <li><i class="fas fa-check"></i> Technical analysis mastery</li>
+                            <li><i class="fas fa-check"></i>Nigerian Stock Trader</li>
                             <li><i class="fas fa-check"></i> Fundamental analysis techniques</li>
                             <li><i class="fas fa-check"></i> Advanced trading strategies</li>
                             <li><i class="fas fa-check"></i> Portfolio optimization</li>
                         </ul>
-                        <a href="#courses" class="btn-link">View Courses <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/BridgeFinanceOfficial" class="btn-link">View Courses <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
@@ -156,7 +182,7 @@
                             <li><i class="fas fa-check"></i> Advanced risk management</li>
                             <li><i class="fas fa-check"></i> Market psychology mastery</li>
                         </ul>
-                        <a href="#courses" class="btn-link">View Courses <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/BridgeFinanceOfficial" class="btn-link">View Courses <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -191,11 +217,11 @@
                                 <span><i class="fas fa-check-circle"></i> Community Access</span>
                             </div>
                             <div class="course-footer">
-                                <div class="course-price">
+                                <!-- <div class="course-price">
                                     <span class="price">$499</span>
                                     <span class="original-price">$699</span>
-                                </div>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                </div> -->
+                                <a href="https://t.me/BridgeFinanceOfficial" class="btn btn-outline-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +234,7 @@
                             <div class="course-level intermediate">Intermediate</div>
                         </div>
                         <div class="course-content">
-                            <h3>Technical Analysis Mastery</h3>
+                            <h3>Nigerian Stock Trading</h3>
                             <div class="course-meta">
                                 <span><i class="fas fa-clock"></i> 8 Weeks</span>
                                 <span><i class="fas fa-video"></i> 64 Lessons</span>
@@ -221,11 +247,7 @@
                                 <span><i class="fas fa-check-circle"></i> Weekly Mentoring</span>
                             </div>
                             <div class="course-footer">
-                                <div class="course-price">
-                                    <span class="price">$899</span>
-                                    <span class="original-price">$1,299</span>
-                                </div>
-                                <a href="#" class="btn btn-primary">Enroll Now</a>
+                                <a href="https://t.me/BridgeFinanceOfficial" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
@@ -249,12 +271,12 @@
                                 <span><i class="fas fa-check-circle"></i> NFT Trading</span>
                                 <span><i class="fas fa-check-circle"></i> 1-on-1 Coaching</span>
                             </div>
-                            <div class="course-footer">
+                            <!-- <div class="course-footer">
                                 <div class="course-price">
                                     <span class="price">$1,299</span>
                                     <span class="original-price">$1,799</span>
-                                </div>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                </div> -->
+                                <a href="https://t.me/BridgeFinanceOfficial" class="btn btn-outline-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
@@ -337,7 +359,7 @@
                             <div class="mentorship-icon">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
-                            <h3>1-on-1 Coaching</h3>
+                            <h3>1-on-1 Mentorship</h3>
                         </div>
                         <div class="mentorship-content">
                             <p>Work directly with a dedicated mentor who will analyze your trading, provide personalized feedback, and accelerate your learning curve.</p>
@@ -351,10 +373,10 @@
                         </div>
                         <div class="mentorship-footer">
                             <div class="mentorship-price">
-                                <span class="price">$1,499</span>
+                                <span class="price">₦350,0000</span>
                                 <span class="period">/month</span>
                             </div>
-                            <a href="#" class="btn btn-outline-primary">Apply Now</a>
+                            <a href="https://t.me/BridgeFinanceOfficial" class="btn btn-outline-primary">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -365,7 +387,7 @@
                             <div class="mentorship-icon">
                                 <i class="fas fa-users-cog"></i>
                             </div>
-                            <h3>Group Mentorship</h3>
+                            <h3>2 Months Trading Mentorship</h3>
                         </div>
                         <div class="mentorship-content">
                             <p>Join a small group of dedicated traders led by an expert mentor who will guide your collective development through collaborative learning.</p>
@@ -379,10 +401,10 @@
                         </div>
                         <div class="mentorship-footer">
                             <div class="mentorship-price">
-                                <span class="price">$699</span>
-                                <span class="period">/month</span>
+                                <span class="price">₦100,000</span>
+                                <span class="period">/One Time</span>
                             </div>
-                            <a href="#" class="btn btn-primary">Apply Now</a>
+                            <a href="https://t.me/BridgeFinanceOfficial" class="btn btn-primary">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -392,7 +414,7 @@
                             <div class="mentorship-icon">
                                 <i class="fas fa-rocket"></i>
                             </div>
-                            <h3>Accelerator Program</h3>
+                            <h3>Life TimeMentorship</h3>
                         </div>
                         <div class="mentorship-content">
                             <p>An intensive 12-week program designed to rapidly develop your trading skills through immersive learning and hands-on application.</p>
@@ -406,10 +428,10 @@
                         </div>
                         <div class="mentorship-footer">
                             <div class="mentorship-price">
-                                <span class="price">$4,999</span>
-                                <span class="period">/program</span>
+                                <span class="price">₦500,000</span>
+                                <span class="period">/One Time</span>
                             </div>
-                            <a href="#" class="btn btn-outline-primary">Apply Now</a>
+                            <a href="https://t.me/BridgeFinanceOfficial" class="btn btn-outline-primary">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -518,10 +540,10 @@
                             <p>"Bridge Finance's Technical Analysis Mastery course completely transformed my trading. I went from inconsistent results to a structured approach that has increased my win rate by over 40%. The instructors don't just teach theory—they show you exactly how to apply it in real market conditions."</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="James Wilson" class="author-image">
+                            <!-- <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="James Wilson" class="author-image"> -->
                             <div class="author-info">
-                                <h4>James Wilson</h4>
-                                <p>Forex Trader, London</p>
+                                <h4>Timothy Chuku</h4>
+                                <p>Forex Trader, Lagos</p>
                             </div>
                         </div>
                     </div>
@@ -537,7 +559,7 @@
                             <p>"The 1-on-1 mentorship program was exactly what I needed to break through my trading plateau. My mentor identified critical flaws in my approach that I couldn't see myself. Within three months, I achieved my first consistently profitable quarter after years of struggling."</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sarah Johnson" class="author-image">
+                            <!-- <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sarah Johnson" class="author-image"> -->
                             <div class="author-info">
                                 <h4>Sarah Johnson</h4>
                                 <p>Stock Trader, New York</p>
@@ -556,10 +578,10 @@
                             <p>"As someone who lost money in crypto for years, the Cryptocurrency Trading Elite course was eye-opening. The instructors demystified market cycles and showed me how to identify high-probability setups. I've now recovered all my previous losses and built a sustainable trading business."</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Michael Chang" class="author-image">
+                            <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Michael Chang" class="author-image"> -->
                             <div class="author-info">
-                                <h4>Michael Chang</h4>
-                                <p>Crypto Trader, Singapore</p>
+                                <h4>Michael emeka</h4>
+                                <p>Crypto Trader, Enugu</p>
                             </div>
                         </div>
                     </div>
@@ -575,10 +597,10 @@
                             <p>"The Accelerator Program was intense but exactly what I needed. The daily market briefings and weekly challenges pushed me to develop discipline and consistency. In just 12 weeks, I gained knowledge that would have taken years to acquire on my own."</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Aisha Patel" class="author-image">
+                            <!-- <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Aisha Patel" class="author-image"> -->
                             <div class="author-info">
-                                <h4>Aisha Patel</h4>
-                                <p>Multi-Market Trader, Dubai</p>
+                                <h4>Aisha Mamud</h4>
+                                <p>Multi-Market Trader, Abuja</p>
                             </div>
                         </div>
                     </div>
